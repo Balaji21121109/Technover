@@ -1,0 +1,10 @@
+function Person(first, last){
+  this.first= first;
+   this.last = last;
+}
+const member = new Person("li","Ha");
+Person.getFullName=function(){
+  return `${this.first} ${this.last}`;
+
+};
+console.log(member.getFullName());
